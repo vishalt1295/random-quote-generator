@@ -10,7 +10,7 @@ export default function QuotesList() {
         <div className="w-48">
           <Category />
         </div>
-        <div className="w-3/5 rounded overflow-hidden shadow-lg p-5">
+        <div className="lg:w-3/5 rounded overflow-hidden shadow-lg p-5">
           <div className="text-center">
             <p className="font-medium text-lg mb-2">{quotes.content}</p>
             <cite className="text-gray-600">-{quotes.author}</cite>
