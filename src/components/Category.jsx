@@ -2,11 +2,12 @@ import React from "react";
 import { useQuoteContext } from "../context/quote.context";
 
 export default function Category() {
-  const { tags, setCategory } = useQuoteContext([]);
+  const { tags, setCategory, fetchAPI } = useQuoteContext([]);
 
   const handleChange = (e) => {
     setCategory(e.target.value);
     // console.log(e.target.value);
+    fetchAPI();
   };
 
   return (
